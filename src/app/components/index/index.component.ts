@@ -323,7 +323,6 @@ export class IndexComponent implements OnInit {
     let lang;
     let lat;
     this._deliveryApi.post().subscribe(response => {
-      console.log('decoded', response.decodedPolylines)
       this.polylines = response.decodedPolylines;
     })
   }

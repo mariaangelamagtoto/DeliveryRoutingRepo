@@ -15,7 +15,6 @@ yarn or yarn instal (First install yarn - npm install -g yarn)
 Pre-requirements
 =======
 
-Add a mongodb as a DB
 
 Change the db connection here `in env.ts or in defaults.ts`;  
 

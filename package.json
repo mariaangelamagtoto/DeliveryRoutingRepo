@@ -11,7 +11,7 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "start:client:webpack": "webpack-dev-server --inline --progress --port 8081",
     "start:server:webpack": "nodemon back/app.server.js $PORT $LOGS",
-    "start:dev": "tsc && concurrently \"npm run start:client:webpack\" \"npm run start:server:webpack\"",
+    "start:dev": "tsc && npm install nodemon -g && concurrently \"npm run start:client:webpack\" \"npm run start:server:webpack\"",
     "build:client:webpack": "rimraf dist && webpack --config config/webpack.prod.js",
     "build:server:webpack": "rimraf build && webpack --config back/webpack.prod.js",
     "start:prod": "tsc && npm run build:client:webpack && npm run build:server:webpack && nodemon build/app.server.js",

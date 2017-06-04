@@ -51,7 +51,6 @@
             </sebm-google-map-info-window>
         </sebm-google-map-marker>
         <!--/Vehicle_e-->
-        <!--....................POlylines not yet fixed..................................-->
         <sebm-google-map-polyline *ngFor="let items of polylines; let i = index" [strokeColor]="_strokeColor[i]">
             <sebm-google-map-polyline-point *ngFor="let item of items;" [latitude]="item.lat * .10" [longitude]="item.lng * .10"></sebm-google-map-polyline-point>
         </sebm-google-map-polyline>
@@ -62,7 +61,6 @@
 <br>
 <button class="btn-default" style="border-radius: 10px;" (click)="showData()">Get Data</button>
 <button class="btn-default" style="border-radius: 10px;" (click)="generateRoutes()">Generate Routes</button>
-<button class="btn-default" style="border-radius: 10px;">Save</button>
 <br>
 
 <div class="column">
