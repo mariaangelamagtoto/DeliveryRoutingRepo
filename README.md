@@ -10,13 +10,10 @@ git clone https://github.com/caninojories/NG2Webpack.git
 
 cd NG2Webpack
 
-yarn or yarn instal (First install yarn - npm install -g yarn)
+yarn or yarn install (First install yarn - npm install -g yarn)
 
 Pre-requirements
 =======
-
-
-Change the db connection here `in env.ts or in defaults.ts`;  
 
 Add an api connection here `config/env.js` for the HOSTNAME
 
